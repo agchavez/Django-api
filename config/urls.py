@@ -10,6 +10,7 @@ from django.contrib import admin
 urlpatterns = [
     # Django Admin
     path(settings.ADMIN_URL, admin.site.urls),
-    path('', include(('api.circles.urls', 'circles'), namespace='circle'))
+    path('', include(('api.circles.urls', 'circles'), namespace='circle')),
+    path('', include(('api.users.urls', 'users'), namespace='user')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
