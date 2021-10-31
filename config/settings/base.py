@@ -47,7 +47,8 @@ DJANGO_APPS = [
 THIRD_PARTY_APPS = [
 ]
 LOCAL_APPS = [
-    'api.users.apps.UserAppConfig'
+    'api.users.apps.UserAppConfig',
+    'api.circles.apps.CircleAppConfig',
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 

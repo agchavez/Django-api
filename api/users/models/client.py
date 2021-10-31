@@ -28,7 +28,7 @@ class Client(BaseModel):
     )
 
     def __str__(self):
-        return str(self.users)
+        return str(self.user)
     
 
 
